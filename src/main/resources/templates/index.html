@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+
+    <script src="/js/dataquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+
+</head>
+
+<body>
+
+<h1 class="hx">My Web Services Introduction B-)</h1>
+
+<h3 class = "hx">I konw... It's not looking like blog... I prefer work with backend, so I made front in a quick time.</h3>
+
+
+<form action="/all/5" method="get">
+
+<button type="submit" formaction="/all/1"> one post </button> <!--  this -->
+</form>
+
+<div class="tablex">
+<table id="postTable" class="display">
+
+    <!-- Header Table -->
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Content</th>
+    </tr>
+    </thead>
+    <!-- Footer Table -->
+    <tfoot>
+    <tr >
+        <th >Id</th>
+        <th>Title</th>
+        <th>Content</th>
+    </tr>
+    </tfoot>
+</table>
+</div>
+
+</body>
+</html>
