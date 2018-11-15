@@ -14,12 +14,12 @@ public class PostRestController {
 
     @Autowired
     private PostServiceInterface postService;
-/*
-    @RequestMapping(path = "/add", method = RequestMethod.GET)
+
+    @RequestMapping(path = "/add", method = RequestMethod.PUT)
     public String addNewPost(@RequestParam String title, @RequestParam String content){
         return postService.addNewPost(title, content);
     }
-*/
+
     @GetMapping("/all")
     public Iterable<PostsEntity> getAllPosts(){
         return postService.getAllPosts();
